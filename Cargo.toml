@@ -2,7 +2,18 @@
 name = "cooplan-config-reader"
 version = "0.1.0"
 edition = "2021"
+description = "simple function for reading config files based on tokio & serde json"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+# Third party dependencies
+serde = { version = "1.0.141", features = ["derive"] }
+serde_json = "1.0.82"
+
+log = "0.4.17"
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
